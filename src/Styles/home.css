@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(20, 19, 19, 0.931);
+}
+
+h1 {
+  width: 90%;
+  font-size: 23px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+.cards {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0px;
+  padding: 20px;
+  width: 130px;
+  height: 100px;
+  color: white;
+  background-color: rgb(47, 62, 70);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+.perc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.data > h3 {
+  font-size: 12px;
+  margin: 5px 0px;
+}
+.data {
+  text-align: center;
+}
+
+.perc > h2 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.change {
+  font-size: 0.8em;
+  color: green;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 8px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.percentage {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* StaticGraph.css */
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 85vw;
+  width: 95vw;
+  color: white;
+  min-height: 200px; /* Set a height that works for your layout */
+  position: relative; /* Required for responsiveness */
+}
+.bar {
+  width: 765px;
+  height: 180px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: rgb(47, 62, 70);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.responsive-icon {
+  font-size: 5vw; /* Responsive size based on viewport width */
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.responsive-icon:hover {
+  transform: scale(1.2); /* Scale effect on hover */
+}
+
+.goals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  width: 301px;
+  height: 180px;
+  background-color: rgb(47, 62, 70);
+  border-radius: 5px;
+}
+.goal1 {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin: 10px;
+}
+
+.recent-orders {
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid;
+}
+th {
+  font-weight: 400;
+}
+th,
+td {
+  font-weight: 500;
+  padding: 4px 8px;
+  text-align: left;
+}
+
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.delivered {
+  color: rgb(2, 100, 2);
+  background-color: #4caf4f9d; /* Replace with the desired color */
+  /* Text color for better contrast */
+  padding: 2px 4px; /* Set padding to 4px */
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.cancelled {
+  color: red;
+  border-radius: 8px;
+  background-color: #ec1b1b50; /* Replace with the desired color */
+  /* Text color for better contrast */
+  padding: 2px 4px; /* Set padding to 4px */
+  display: inline-block;
+  font-size: 12px;
+}
+
+.pending {
+  color: orange;
+}
+
+.feedback-container {
+  padding-left: 10px;
+  padding-top: 2px;
+  border-bottom: 1px solid black;
+  color: #fff;
+}
+.feedback-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.feedback-user {
+  display: flex;
+  align-items: center;
+}
+.feedback-user h3 {
+  font-size: 14px;
+}
+.feedback-user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.feedback-rating {
+  display: flex;
+}
+.feedback-rating i {
+  font-size: 12px;
+  color: #ffc107;
+  margin-right: 2px;
+}
+.feedback-content {
+  margin-bottom: 10px;
+}
+.feedback-content p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    width: 500px;
+    height: 100%; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container,
+  .bar {
+    width: 300px;
+    margin: 0px;
+    height: 100%; /* Further adjust height for mobile screens */
+  }
+  .goals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+    width: 301px;
+    height: 180px;
+    background-color: rgb(47, 62, 70);
+    border-radius: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .responsive-icon {
+    font-size: 8vw; /* Larger size for smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    min-height: 160vh;
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  th,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    display: none; /* Hide headers on small screens */
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  td {
+    text-align: right;
+    position: relative;
+    padding-left: 50%; /* Space for labels */
+  }
+
+  td::before {
+    content: attr(data-label); /* Use data-label for headers */
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feedback-container {
+    margin: 10px;
+  }
+  .feedback-header {
+    flex-direction: column;
+  }
+  .feedback-user {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 470px) {
+  #feed {
+    min-height: 270px;
+  }
+}
